@@ -6,9 +6,6 @@ eureka:
 server.shutdown: graceful
 spring:
   lifecycle.timeout-per-shutdown-phase: 20s
-  kubernetes:
-    discovery:
-      enabled: "false"
 management:
   endpoints.web.exposure.include: "*"
   endpoint.shutdown.enabled: true
