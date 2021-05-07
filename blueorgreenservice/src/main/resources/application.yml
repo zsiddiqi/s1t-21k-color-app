@@ -3,3 +3,4 @@ spring:
     name: blueorgreen
   config:
     import: "optional:configserver:"
+
