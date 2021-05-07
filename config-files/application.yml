@@ -3,11 +3,12 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
     metadataMap.instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
-
 server.shutdown: graceful
-
-spring.lifecycle.timeout-per-shutdown-phase: 20s
-
+spring:
+  lifecycle.timeout-per-shutdown-phase: 20s
+  kubernetes:
+    discovery:
+      enabled: "false"
 management:
   endpoints.web.exposure.include: "*"
   endpoint.shutdown.enabled: true
