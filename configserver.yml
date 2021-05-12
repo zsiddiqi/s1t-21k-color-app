@@ -8,7 +8,7 @@ management:
 spring:
   config.activate.on-profile: git
   cloud.config.server.git:
-          uri: https://github.com/springone-tour-2021/gateway-s1p-2018
+          uri: https://github.com/springone-tour-2021/color-app
           search-paths: config-files/
 
 ---
@@ -16,4 +16,4 @@ spring:
   config.activate.on-profile: native
   cloud.config.server.native:
           searchLocations: file://${user.home}/color-app/config-files
-#          searchLocations: file://${user.home}/workspace/springone-tour-2021/gateway-s1p-2018/config-files
+#          searchLocations: file://${user.home}/workspace/springone-tour-2021/color-app/config-files
