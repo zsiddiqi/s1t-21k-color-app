@@ -22,3 +22,11 @@ spring.config.activate.on-profile: "yellow"
 color: yellow
 server.port: 8282
 eureka.instance.metadataMap.hint: premium
+---
+spring:
+  config:
+    activate:
+      on-cloud-platform: "kubernetes"
+server:
+  port: 8080
+

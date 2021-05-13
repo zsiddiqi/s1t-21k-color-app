@@ -1,0 +1,41 @@
+/home/eduk8s/color-app/blueorgreenfrontend
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building blueorgreenfrontend 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ blueorgreenfrontend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ blueorgreenfrontend ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/eduk8s/color-app/blueorgreenfrontend/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ blueorgreenfrontend ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/eduk8s/color-app/blueorgreenfrontend/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ blueorgreenfrontend ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/eduk8s/color-app/blueorgreenfrontend/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ blueorgreenfrontend ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ blueorgreenfrontend ---
+[INFO] Building jar: /home/eduk8s/color-app/blueorgreenfrontend/target/blueorgreenfrontend-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.4.5:repackage (repackage) @ blueorgreenfrontend ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.895 s
+[INFO] Finished at: 2021-05-13T17:30:53Z
+[INFO] Final Memory: 28M/109M
+[INFO] ------------------------------------------------------------------------

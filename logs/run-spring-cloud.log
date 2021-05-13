@@ -1,0 +1,761 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-05-13 17:25:43.728  INFO 533 --- [           main] o.s.c.l.deployer.DeployerApplication     : Starting DeployerApplication v3.0.2 using Java 11.0.10 on eduk8s-labs-w01-s060-8b7b74469-pzs2w with PID 533 (/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-deployer/3.0.2/spring-cloud-launcher-deployer-3.0.2.jar started by eduk8s in /home/eduk8s/color-app)
+2021-05-13 17:25:43.732  INFO 533 --- [           main] o.s.c.l.deployer.DeployerApplication     : No active profile set, falling back to default profiles: default
+2021-05-13 17:25:43.781  WARN 533 --- [           main] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [cloud.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [cloud.yml] from spring-cloud-launcher-deployer-3.0.2.jar - 97:13]
+2021-05-13 17:25:45.202  INFO 533 --- [           main] o.s.c.l.deployer.DeployerApplication     : Started DeployerApplication in 2.158 seconds (JVM running for 14.873)
+2021-05-13 17:25:45.324  INFO 533 --- [           main] o.s.cloud.launcher.deployer.Deployer     : Loaded YAML properties from: file [/home/eduk8s/color-app/./configserver.yml]
+2021-05-13 17:25:45.749  INFO 533 --- [           main] o.s.boot.loader.thin.PathResolver        : Extracting dependencies from: jar:file:/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-configserver/3.0.2/spring-cloud-launcher-configserver-3.0.2.jar!/, with profiles []
+2021-05-13 17:25:45.756  INFO 533 --- [           main] o.s.boot.loader.thin.PathResolver        : Searching for properties in: jar:file:/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-configserver/3.0.2/spring-cloud-launcher-configserver-3.0.2.jar!/
+2021-05-13 17:25:45.756  INFO 533 --- [           main] o.s.boot.loader.thin.PathResolver        : Loading properties from: URL [jar:file:/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-configserver/3.0.2/spring-cloud-launcher-configserver-3.0.2.jar!/META-INF/thin.properties]
+2021-05-13 17:25:45.771  INFO 533 --- [           main] o.s.boot.loader.thin.PathResolver        : Extracting dependencies from: URL [jar:file:/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-configserver/3.0.2/spring-cloud-launcher-configserver-3.0.2.jar!/META-INF/maven/org.springframework.cloud.launcher/spring-cloud-launcher-configserver/pom.xml], with profiles []
+2021-05-13 17:25:46.613  INFO 533 --- [           main] o.s.b.loader.thin.MavenSettingsReader    : No settings found at: /home/eduk8s/.m2/settings.xml
+2021-05-13 17:25:46.634  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Computing dependencies from pom and properties
+2021-05-13 17:25:55.303  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-actuator:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.4.3/spring-boot-starter-actuator-2.4.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.3/spring-boot-starter-2.4.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot/2.4.3/spring-boot-2.4.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-context:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-context/5.3.4/spring-context-5.3.4.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-autoconfigure:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.3/spring-boot-autoconfigure-2.4.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-logging:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.4.3/spring-boot-starter-logging-2.4.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: ch.qos.logback:logback-classic:1.2.3=/home/eduk8s/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: ch.qos.logback:logback-core:1.2.3=/home/eduk8s/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.logging.log4j:log4j-to-slf4j:2.13.3=/home/eduk8s/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.logging.log4j:log4j-api:2.13.3=/home/eduk8s/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.slf4j:jul-to-slf4j:1.7.30=/home/eduk8s/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: jakarta.annotation:jakarta.annotation-api:1.3.5=/home/eduk8s/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar
+2021-05-13 17:25:55.304  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-core:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-core/5.3.4/spring-core-5.3.4.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-jcl:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-jcl/5.3.4/spring-jcl-5.3.4.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-actuator-autoconfigure:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.4.3/spring-boot-actuator-autoconfigure-2.4.3.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-actuator:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-actuator/2.4.3/spring-boot-actuator-2.4.3.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.core:jackson-databind:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: io.micrometer:micrometer-core:1.6.4=/home/eduk8s/.m2/repository/io/micrometer/micrometer-core/1.6.4/micrometer-core-1.6.4.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.hdrhistogram:HdrHistogram:2.1.12=/home/eduk8s/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.latencyutils:LatencyUtils:2.0.3=/home/eduk8s/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/3.0.2/spring-cloud-starter-netflix-eureka-client-3.0.2.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter/3.0.2/spring-cloud-starter-3.0.2.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-context:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-context/3.0.2/spring-cloud-context-3.0.2.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-commons:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-commons/3.0.2/spring-cloud-commons-3.0.2.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-netflix-eureka-client:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-netflix-eureka-client/3.0.2/spring-cloud-netflix-eureka-client-3.0.2.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.eureka:eureka-client:1.10.11=/home/eduk8s/.m2/repository/com/netflix/eureka/eureka-client/1.10.11/eureka-client-1.10.11.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.netflix-commons:netflix-eventbus:0.3.0=/home/eduk8s/.m2/repository/com/netflix/netflix-commons/netflix-eventbus/0.3.0/netflix-eventbus-0.3.0.jar
+2021-05-13 17:25:55.305  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.netflix-commons:netflix-infix:0.3.0=/home/eduk8s/.m2/repository/com/netflix/netflix-commons/netflix-infix/0.3.0/netflix-infix-0.3.0.jar
+2021-05-13 17:25:55.306  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-jxpath:commons-jxpath:1.3=/home/eduk8s/.m2/repository/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar
+2021-05-13 17:25:55.306  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: joda-time:joda-time:2.3=/home/eduk8s/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar
+2021-05-13 17:25:55.306  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.antlr:antlr-runtime:3.4=/home/eduk8s/.m2/repository/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar
+2021-05-13 17:25:55.306  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.antlr:stringtemplate:3.2.1=/home/eduk8s/.m2/repository/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar
+2021-05-13 17:25:55.306  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: antlr:antlr:2.7.7=/home/eduk8s/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+2021-05-13 17:25:55.309  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.google.code.gson:gson:2.8.6=/home/eduk8s/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar
+2021-05-13 17:25:55.309  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.commons:commons-math:2.2=/home/eduk8s/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar
+2021-05-13 17:25:55.309  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.thoughtworks.xstream:xstream:1.4.14=/home/eduk8s/.m2/repository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14.jar
+2021-05-13 17:25:55.309  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: xmlpull:xmlpull:1.1.3.1=/home/eduk8s/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+2021-05-13 17:25:55.309  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: xpp3:xpp3_min:1.1.4c=/home/eduk8s/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.archaius:archaius-core:0.7.6=/home/eduk8s/.m2/repository/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.google.guava:guava:16.0=/home/eduk8s/.m2/repository/com/google/guava/guava/16.0/guava-16.0.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.ws.rs:jsr311-api:1.1.1=/home/eduk8s/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.servo:servo-core:0.12.21=/home/eduk8s/.m2/repository/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.httpcomponents:httpclient:4.5.13=/home/eduk8s/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-codec:commons-codec:1.15=/home/eduk8s/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.google.code.findbugs:jsr305:3.0.2=/home/eduk8s/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-configuration:commons-configuration:1.10=/home/eduk8s/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-lang:commons-lang:2.6=/home/eduk8s/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-logging:commons-logging:1.1.1=/home/eduk8s/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.google.inject:guice:4.1.0=/home/eduk8s/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.inject:javax.inject:1=/home/eduk8s/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: aopalliance:aopalliance:1.0=/home/eduk8s/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2021-05-13 17:25:55.310  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.github.vlsi.compactmap:compactmap:2.0=/home/eduk8s/.m2/repository/com/github/vlsi/compactmap/compactmap/2.0/compactmap-2.0.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.github.andrewoma.dexx:dexx-collections:0.2=/home/eduk8s/.m2/repository/com/github/andrewoma/dexx/dexx-collections/0.2/dexx-collections-0.2.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.core:jackson-annotations:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.core:jackson-core:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.codehaus.jettison:jettison:1.4.0=/home/eduk8s/.m2/repository/org/codehaus/jettison/jettison/1.4.0/jettison-1.4.0.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.eureka:eureka-core:1.10.11=/home/eduk8s/.m2/repository/com/netflix/eureka/eureka-core/1.10.11/eureka-core-1.10.11.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.woodstox:woodstox-core:5.3.0=/home/eduk8s/.m2/repository/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.codehaus.woodstox:stax2-api:4.2=/home/eduk8s/.m2/repository/org/codehaus/woodstox/stax2-api/4.2/stax2-api-4.2.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter-loadbalancer:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter-loadbalancer/3.0.2/spring-cloud-starter-loadbalancer-3.0.2.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-loadbalancer:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-loadbalancer/3.0.2/spring-cloud-loadbalancer-3.0.2.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: io.projectreactor:reactor-core:3.4.3=/home/eduk8s/.m2/repository/io/projectreactor/reactor-core/3.4.3/reactor-core-3.4.3.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.reactivestreams:reactive-streams:1.0.3=/home/eduk8s/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: io.projectreactor.addons:reactor-extra:3.4.2=/home/eduk8s/.m2/repository/io/projectreactor/addons/reactor-extra/3.4.2/reactor-extra-3.4.2.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-cache:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-cache/2.4.3/spring-boot-starter-cache-2.4.3.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-context-support:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-context-support/5.3.4/spring-context-support-5.3.4.jar
+2021-05-13 17:25:55.311  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.stoyanr:evictor:1.0.0=/home/eduk8s/.m2/repository/com/stoyanr/evictor/1.0.0/evictor-1.0.0.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter-bus-kafka:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter-bus-kafka/3.0.2/spring-cloud-starter-bus-kafka-3.0.2.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter-stream-kafka:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter-stream-kafka/3.1.2/spring-cloud-starter-stream-kafka-3.1.2.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-stream-binder-kafka:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-stream-binder-kafka/3.1.2/spring-cloud-stream-binder-kafka-3.1.2.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-stream-binder-kafka-core:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-stream-binder-kafka-core/3.1.2/spring-cloud-stream-binder-kafka-core-3.1.2.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.integration:spring-integration-kafka:5.4.4=/home/eduk8s/.m2/repository/org/springframework/integration/spring-integration-kafka/5.4.4/spring-integration-kafka-5.4.4.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-stream:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-stream/3.1.2/spring-cloud-stream-3.1.2.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.integration:spring-integration-jmx:5.4.4=/home/eduk8s/.m2/repository/org/springframework/integration/spring-integration-jmx/5.4.4/spring-integration-jmx-5.4.4.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-function-context:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-function-context/3.1.2/spring-cloud-function-context-3.1.2.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: net.jodah:typetools:0.6.2=/home/eduk8s/.m2/repository/net/jodah/typetools/0.6.2/typetools-0.6.2.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-function-core:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-function-core/3.1.2/spring-cloud-function-core-3.1.2.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.kafka:kafka-clients:2.6.0=/home/eduk8s/.m2/repository/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.github.luben:zstd-jni:1.4.4-7=/home/eduk8s/.m2/repository/com/github/luben/zstd-jni/1.4.4-7/zstd-jni-1.4.4-7.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.lz4:lz4-java:1.7.1=/home/eduk8s/.m2/repository/org/lz4/lz4-java/1.7.1/lz4-java-1.7.1.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.xerial.snappy:snappy-java:1.1.7.3=/home/eduk8s/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.3/snappy-java-1.1.7.3.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.kafka:spring-kafka:2.6.6=/home/eduk8s/.m2/repository/org/springframework/kafka/spring-kafka/2.6.6/spring-kafka-2.6.6.jar
+2021-05-13 17:25:55.312  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-bus:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-bus/3.0.2/spring-cloud-bus-3.0.2.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.integration:spring-integration-core:5.4.4=/home/eduk8s/.m2/repository/org/springframework/integration/spring-integration-core/5.4.4/spring-integration-core-5.4.4.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-aop:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-aop/5.3.4/spring-aop-5.3.4.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-messaging:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-messaging/5.3.4/spring-messaging-5.3.4.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-tx:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-tx/5.3.4/spring-tx-5.3.4.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.retry:spring-retry:1.3.1=/home/eduk8s/.m2/repository/org/springframework/retry/spring-retry/1.3.1/spring-retry-1.3.1.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.annotation:javax.annotation-api:1.3.2=/home/eduk8s/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-config-server:3.0.3=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-config-server/3.0.3/spring-cloud-config-server-3.0.3.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-config-client:3.0.3=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-config-client/3.0.3/spring-cloud-config-client-3.0.3.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-web:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-web/5.3.4/spring-web-5.3.4.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-beans:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-beans/5.3.4/spring-beans-5.3.4.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-web:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.3/spring-boot-starter-web-2.4.3.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-json:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.3/spring-boot-starter-json-2.4.3.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-tomcat:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.3/spring-boot-starter-tomcat-2.4.3.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.tomcat.embed:tomcat-embed-core:9.0.43=/home/eduk8s/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.43/tomcat-embed-core-9.0.43.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.43=/home/eduk8s/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.43/tomcat-embed-websocket-9.0.43.jar
+2021-05-13 17:25:55.313  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-webmvc:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-webmvc/5.3.4/spring-webmvc-5.3.4.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-expression:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-expression/5.3.4/spring-expression-5.3.4.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-validation:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.4.3/spring-boot-starter-validation-2.4.3.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.glassfish:jakarta.el:3.0.3=/home/eduk8s/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.hibernate.validator:hibernate-validator:6.1.7.Final=/home/eduk8s/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.7.Final/hibernate-validator-6.1.7.Final.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: jakarta.validation:jakarta.validation-api:2.0.2=/home/eduk8s/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.jboss.logging:jboss-logging:3.4.1.Final=/home/eduk8s/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml:classmate:1.5.1=/home/eduk8s/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.security:spring-security-crypto:5.4.5=/home/eduk8s/.m2/repository/org/springframework/security/spring-security-crypto/5.4.5/spring-security-crypto-5.4.5.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.security:spring-security-rsa:1.0.9.RELEASE=/home/eduk8s/.m2/repository/org/springframework/security/spring-security-rsa/1.0.9.RELEASE/spring-security-rsa-1.0.9.RELEASE.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.bouncycastle:bcpkix-jdk15on:1.64=/home/eduk8s/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.bouncycastle:bcprov-jdk15on:1.64=/home/eduk8s/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.eclipse.jgit:org.eclipse.jgit:5.1.3.201810200350-r=/home/eduk8s/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/5.1.3.201810200350-r/org.eclipse.jgit-5.1.3.201810200350-r.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.jcraft:jsch:0.1.54=/home/eduk8s/.m2/repository/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.jcraft:jzlib:1.1.1=/home/eduk8s/.m2/repository/com/jcraft/jzlib/1.1.1/jzlib-1.1.1.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.googlecode.javaewah:JavaEWAH:1.1.6=/home/eduk8s/.m2/repository/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.slf4j:slf4j-api:1.7.30=/home/eduk8s/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.eclipse.jgit:org.eclipse.jgit.http.apache:5.1.3.201810200350-r=/home/eduk8s/.m2/repository/org/eclipse/jgit/org.eclipse.jgit.http.apache/5.1.3.201810200350-r/org.eclipse.jgit.http.apache-5.1.3.201810200350-r.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.httpcomponents:httpcore:4.4.14=/home/eduk8s/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar
+2021-05-13 17:25:55.314  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.yaml:snakeyaml:1.27=/home/eduk8s/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar
+2021-05-13 17:25:55.315  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.11.4/jackson-dataformat-yaml-2.11.4.jar
+2021-05-13 17:25:55.315  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-config-monitor:3.0.3=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-config-monitor/3.0.3/spring-cloud-config-monitor-3.0.3.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.util.ReflectionUtils (file:/home/eduk8s/.m2/repository/org/springframework/spring-core/5.3.4/spring-core-5.3.4.jar) to field java.net.URL.factory
+WARNING: Please consider reporting this to the maintainers of org.springframework.util.ReflectionUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-05-13 17:25:56.370  INFO 533 --- [       Thread-0] o.s.boot.SpringApplication               : Starting application using Java 11.0.10 on eduk8s-labs-w01-s060-8b7b74469-pzs2w with PID 533 (/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-configserver/3.0.2/spring-cloud-launcher-configserver-3.0.2.jar started by eduk8s in /home/eduk8s/color-app)
+2021-05-13 17:25:56.372  INFO 533 --- [       Thread-0] o.s.boot.SpringApplication               : The following profiles are active: git
+2021-05-13 17:25:58.403  INFO 533 --- [       Thread-0] o.s.cloud.context.scope.GenericScope     : BeanFactory id=77ab4a47-4965-31c6-86a1-2ea4d9e6e4d9
+2021-05-13 17:25:58.419  INFO 533 --- [       Thread-0] o.s.c.a.ConfigurationClassEnhancer       : @Bean method FunctionConfiguration.po is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2021-05-13 17:25:58.453  INFO 533 --- [       Thread-0] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-05-13 17:25:58.459  INFO 533 --- [       Thread-0] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-05-13 17:25:58.464  INFO 533 --- [       Thread-0] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-05-13 17:25:58.557  INFO 533 --- [       Thread-0] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$6577853d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:25:58.599  INFO 533 --- [       Thread-0] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:25:58.604  INFO 533 --- [       Thread-0] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:25:58.641  INFO 533 --- [       Thread-0] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:25:58.665  INFO 533 --- [       Thread-0] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:25:58.670  INFO 533 --- [       Thread-0] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:25:59.286  INFO 533 --- [       Thread-0] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-05-13 17:25:59.304  INFO 533 --- [       Thread-0] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-13 17:25:59.305  INFO 533 --- [       Thread-0] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-13 17:25:59.349  INFO 533 --- [       Thread-0] org.apache.catalina.loader.WebappLoader  : Unknown class loader [jdk.internal.loader.ClassLoaders$PlatformClassLoader@147c00aa] of class [class jdk.internal.loader.ClassLoaders$PlatformClassLoader]
+2021-05-13 17:25:59.399  INFO 533 --- [       Thread-0] o.a.c.c.C.[Tomcat-4996].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2021-05-13 17:25:59.400  INFO 533 --- [       Thread-0] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2978 ms
+2021-05-13 17:26:00.630  INFO 533 --- [       Thread-0] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-13 17:26:01.616  INFO 533 --- [       Thread-0] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-05-13 17:26:01.636  INFO 533 --- [       Thread-0] c.f.c.c.BeanFactoryAwareFunctionRegistry : Can't determine default function definition. Please use 'spring.cloud.function.definition' property to explicitly define it.
+2021-05-13 17:26:02.111  INFO 533 --- [       Thread-0] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-05-13 17:26:02.315  WARN 533 --- [       Thread-0] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-05-13 17:26:02.355  INFO 533 --- [       Thread-0] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2021-05-13 17:26:02.452  INFO 533 --- [       Thread-0] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-05-13 17:26:02.453  INFO 533 --- [       Thread-0] o.s.i.channel.PublishSubscribeChannel    : Channel 'configserver.errorChannel' has 1 subscriber(s).
+2021-05-13 17:26:02.453  INFO 533 --- [       Thread-0] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2021-05-13 17:26:02.462  INFO 533 --- [       Thread-0] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-13 17:26:02.537  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-13 17:26:02.542  INFO 533 --- [       Thread-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-13 17:26:02.566  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-13 17:26:02.567  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-13 17:26:02.567  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-13 17:26:02.567  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-13 17:26:02.567  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-13 17:26:02.567  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-13 17:26:02.567  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-13 17:26:02.854  INFO 533 --- [       Thread-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$af530d74.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:585)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:144)
+	at org.springframework.cloud.deployer.thin.ContextRunner$1.run(ContextRunner.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 69 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 82 more
+
+2021-05-13 17:26:02.854  WARN 533 --- [       Thread-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+2021-05-13 17:26:02.855  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$af530d74.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:585)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:144)
+	at org.springframework.cloud.deployer.thin.ContextRunner$1.run(ContextRunner.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-05-13 17:26:02.855  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
+2021-05-13 17:26:02.855  WARN 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+2021-05-13 17:26:02.856  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
+2021-05-13 17:26:02.858  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-05-13 17:26:02.860  INFO 533 --- [       Thread-0] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-05-13 17:26:02.868  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1620926762865 with initial instances count: 0
+2021-05-13 17:26:02.871  INFO 533 --- [       Thread-0] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONFIGSERVER with eureka with status UP
+2021-05-13 17:26:02.872  INFO 533 --- [       Thread-0] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1620926762872, current=UP, previous=STARTING]
+2021-05-13 17:26:02.874  INFO 533 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888: registering service...
+2021-05-13 17:26:02.877  INFO 533 --- [       Thread-0] o.s.c.c.m.FileMonitorConfiguration       : Not monitoring for local config changes
+2021-05-13 17:26:02.934  INFO 533 --- [       Thread-0] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-05-13 17:26:02.935  INFO 533 --- [       Thread-0] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8888
+2021-05-13 17:26:02.954  INFO 533 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CONFIGSERVER": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CONFIGSERVER": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2021-05-13 17:26:02.954  WARN 533 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CONFIGSERVER": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+2021-05-13 17:26:02.957  WARN 533 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.11.jar:1.10.11]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-05-13 17:26:02.958  WARN 533 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.11.jar:1.10.11]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.11.jar:1.10.11]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-05-13 17:26:02.996  INFO 533 --- [       Thread-0] o.s.boot.SpringApplication               : Started application in 7.411 seconds (JVM running for 32.667)
+2021-05-13 17:26:03.007  INFO 533 --- [           main] o.s.cloud.launcher.deployer.Deployer     : 
+
+Waiting for configserver to start.
+
+2021-05-13 17:26:03.008  INFO 533 --- [           main] o.s.cloud.launcher.deployer.Deployer     : Status of c2b96493bf2e7fb56d623483e6db3211: deployed
+2021-05-13 17:26:03.010  INFO 533 --- [           main] o.s.cloud.launcher.deployer.Deployer     : Loaded YAML properties from: file [/home/eduk8s/color-app/./eureka.yml]
+2021-05-13 17:26:03.143  INFO 533 --- [           main] o.s.boot.loader.thin.PathResolver        : Extracting dependencies from: jar:file:/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-eureka/3.0.2/spring-cloud-launcher-eureka-3.0.2.jar!/, with profiles []
+2021-05-13 17:26:03.143  INFO 533 --- [           main] o.s.boot.loader.thin.PathResolver        : Searching for properties in: jar:file:/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-eureka/3.0.2/spring-cloud-launcher-eureka-3.0.2.jar!/
+2021-05-13 17:26:03.145  INFO 533 --- [           main] o.s.boot.loader.thin.PathResolver        : Extracting dependencies from: URL [jar:file:/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-eureka/3.0.2/spring-cloud-launcher-eureka-3.0.2.jar!/META-INF/maven/org.springframework.cloud.launcher/spring-cloud-launcher-eureka/pom.xml], with profiles []
+2021-05-13 17:26:03.145  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Computing dependencies from pom and properties
+2021-05-13 17:26:12.772  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-actuator:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.4.3/spring-boot-starter-actuator-2.4.3.jar
+2021-05-13 17:26:12.772  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.3/spring-boot-starter-2.4.3.jar
+2021-05-13 17:26:12.772  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot/2.4.3/spring-boot-2.4.3.jar
+2021-05-13 17:26:12.772  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-context:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-context/5.3.4/spring-context-5.3.4.jar
+2021-05-13 17:26:12.772  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-autoconfigure:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.3/spring-boot-autoconfigure-2.4.3.jar
+2021-05-13 17:26:12.772  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-logging:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.4.3/spring-boot-starter-logging-2.4.3.jar
+2021-05-13 17:26:12.772  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: ch.qos.logback:logback-classic:1.2.3=/home/eduk8s/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar
+2021-05-13 17:26:12.772  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: ch.qos.logback:logback-core:1.2.3=/home/eduk8s/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.logging.log4j:log4j-to-slf4j:2.13.3=/home/eduk8s/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.logging.log4j:log4j-api:2.13.3=/home/eduk8s/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.slf4j:jul-to-slf4j:1.7.30=/home/eduk8s/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: jakarta.annotation:jakarta.annotation-api:1.3.5=/home/eduk8s/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-core:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-core/5.3.4/spring-core-5.3.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-jcl:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-jcl/5.3.4/spring-jcl-5.3.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.yaml:snakeyaml:1.27=/home/eduk8s/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-actuator-autoconfigure:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.4.3/spring-boot-actuator-autoconfigure-2.4.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-actuator:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-actuator/2.4.3/spring-boot-actuator-2.4.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: io.micrometer:micrometer-core:1.6.4=/home/eduk8s/.m2/repository/io/micrometer/micrometer-core/1.6.4/micrometer-core-1.6.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.hdrhistogram:HdrHistogram:2.1.12=/home/eduk8s/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.latencyutils:LatencyUtils:2.0.3=/home/eduk8s/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter-config:3.0.3=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter-config/3.0.3/spring-cloud-starter-config-3.0.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter/3.0.2/spring-cloud-starter-3.0.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-context:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-context/3.0.2/spring-cloud-context-3.0.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.security:spring-security-rsa:1.0.9.RELEASE=/home/eduk8s/.m2/repository/org/springframework/security/spring-security-rsa/1.0.9.RELEASE/spring-security-rsa-1.0.9.RELEASE.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.bouncycastle:bcpkix-jdk15on:1.64=/home/eduk8s/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.bouncycastle:bcprov-jdk15on:1.64=/home/eduk8s/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-config-client:3.0.3=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-config-client/3.0.3/spring-cloud-config-client-3.0.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-web:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-web/5.3.4/spring-web-5.3.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-beans:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-beans/5.3.4/spring-beans-5.3.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.core:jackson-annotations:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.httpcomponents:httpclient:4.5.13=/home/eduk8s/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.httpcomponents:httpcore:4.4.14=/home/eduk8s/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-codec:commons-codec:1.15=/home/eduk8s/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.core:jackson-databind:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.core:jackson-core:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter-bus-kafka:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter-bus-kafka/3.0.2/spring-cloud-starter-bus-kafka-3.0.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-starter-stream-kafka:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-starter-stream-kafka/3.1.2/spring-cloud-starter-stream-kafka-3.1.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-stream-binder-kafka:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-stream-binder-kafka/3.1.2/spring-cloud-stream-binder-kafka-3.1.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-stream-binder-kafka-core:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-stream-binder-kafka-core/3.1.2/spring-cloud-stream-binder-kafka-core-3.1.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.integration:spring-integration-kafka:5.4.4=/home/eduk8s/.m2/repository/org/springframework/integration/spring-integration-kafka/5.4.4/spring-integration-kafka-5.4.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-stream:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-stream/3.1.2/spring-cloud-stream-3.1.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-validation:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.4.3/spring-boot-starter-validation-2.4.3.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.hibernate.validator:hibernate-validator:6.1.7.Final=/home/eduk8s/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.7.Final/hibernate-validator-6.1.7.Final.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: jakarta.validation:jakarta.validation-api:2.0.2=/home/eduk8s/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.jboss.logging:jboss-logging:3.4.1.Final=/home/eduk8s/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml:classmate:1.5.1=/home/eduk8s/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.integration:spring-integration-jmx:5.4.4=/home/eduk8s/.m2/repository/org/springframework/integration/spring-integration-jmx/5.4.4/spring-integration-jmx-5.4.4.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-function-context:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-function-context/3.1.2/spring-cloud-function-context-3.1.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: net.jodah:typetools:0.6.2=/home/eduk8s/.m2/repository/net/jodah/typetools/0.6.2/typetools-0.6.2.jar
+2021-05-13 17:26:12.773  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-function-core:3.1.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-function-core/3.1.2/spring-cloud-function-core-3.1.2.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.kafka:kafka-clients:2.6.0=/home/eduk8s/.m2/repository/org/apache/kafka/kafka-clients/2.6.0/kafka-clients-2.6.0.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.github.luben:zstd-jni:1.4.4-7=/home/eduk8s/.m2/repository/com/github/luben/zstd-jni/1.4.4-7/zstd-jni-1.4.4-7.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.lz4:lz4-java:1.7.1=/home/eduk8s/.m2/repository/org/lz4/lz4-java/1.7.1/lz4-java-1.7.1.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.xerial.snappy:snappy-java:1.1.7.3=/home/eduk8s/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.3/snappy-java-1.1.7.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.kafka:spring-kafka:2.6.6=/home/eduk8s/.m2/repository/org/springframework/kafka/spring-kafka/2.6.6/spring-kafka-2.6.6.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-bus:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-bus/3.0.2/spring-cloud-bus-3.0.2.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.integration:spring-integration-core:5.4.4=/home/eduk8s/.m2/repository/org/springframework/integration/spring-integration-core/5.4.4/spring-integration-core-5.4.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-aop:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-aop/5.3.4/spring-aop-5.3.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-messaging:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-messaging/5.3.4/spring-messaging-5.3.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-tx:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-tx/5.3.4/spring-tx-5.3.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.retry:spring-retry:1.3.1=/home/eduk8s/.m2/repository/org/springframework/retry/spring-retry/1.3.1/spring-retry-1.3.1.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.annotation:javax.annotation-api:1.3.2=/home/eduk8s/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: io.projectreactor:reactor-core:3.4.3=/home/eduk8s/.m2/repository/io/projectreactor/reactor-core/3.4.3/reactor-core-3.4.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.reactivestreams:reactive-streams:1.0.3=/home/eduk8s/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-netflix-eureka-server:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-netflix-eureka-server/3.0.2/spring-cloud-netflix-eureka-server-3.0.2.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-web:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.3/spring-boot-starter-web-2.4.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-json:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.3/spring-boot-starter-json-2.4.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-tomcat:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.3/spring-boot-starter-tomcat-2.4.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.tomcat.embed:tomcat-embed-core:9.0.43=/home/eduk8s/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.43/tomcat-embed-core-9.0.43.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.glassfish:jakarta.el:3.0.3=/home/eduk8s/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.43=/home/eduk8s/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.43/tomcat-embed-websocket-9.0.43.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-webmvc:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-webmvc/5.3.4/spring-webmvc-5.3.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-expression:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-expression/5.3.4/spring-expression-5.3.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.boot:spring-boot-starter-freemarker:2.4.3=/home/eduk8s/.m2/repository/org/springframework/boot/spring-boot-starter-freemarker/2.4.3/spring-boot-starter-freemarker-2.4.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.freemarker:freemarker:2.3.31=/home/eduk8s/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework:spring-context-support:5.3.4=/home/eduk8s/.m2/repository/org/springframework/spring-context-support/5.3.4/spring-context-support-5.3.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-commons:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-commons/3.0.2/spring-cloud-commons-3.0.2.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.security:spring-security-crypto:5.4.5=/home/eduk8s/.m2/repository/org/springframework/security/spring-security-crypto/5.4.5/spring-security-crypto-5.4.5.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.springframework.cloud:spring-cloud-netflix-eureka-client:3.0.2=/home/eduk8s/.m2/repository/org/springframework/cloud/spring-cloud-netflix-eureka-client/3.0.2/spring-cloud-netflix-eureka-client-3.0.2.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.eureka:eureka-client:1.10.11=/home/eduk8s/.m2/repository/com/netflix/eureka/eureka-client/1.10.11/eureka-client-1.10.11.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.netflix-commons:netflix-eventbus:0.3.0=/home/eduk8s/.m2/repository/com/netflix/netflix-commons/netflix-eventbus/0.3.0/netflix-eventbus-0.3.0.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.slf4j:slf4j-api:1.7.30=/home/eduk8s/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.netflix-commons:netflix-infix:0.3.0=/home/eduk8s/.m2/repository/com/netflix/netflix-commons/netflix-infix/0.3.0/netflix-infix-0.3.0.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-jxpath:commons-jxpath:1.3=/home/eduk8s/.m2/repository/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.antlr:antlr-runtime:3.4=/home/eduk8s/.m2/repository/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.antlr:stringtemplate:3.2.1=/home/eduk8s/.m2/repository/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: antlr:antlr:2.7.7=/home/eduk8s/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.google.code.gson:gson:2.8.6=/home/eduk8s/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar
+2021-05-13 17:26:12.774  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.apache.commons:commons-math:2.2=/home/eduk8s/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.thoughtworks.xstream:xstream:1.4.14=/home/eduk8s/.m2/repository/com/thoughtworks/xstream/xstream/1.4.14/xstream-1.4.14.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: xmlpull:xmlpull:1.1.3.1=/home/eduk8s/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: xpp3:xpp3_min:1.1.4c=/home/eduk8s/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.ws.rs:jsr311-api:1.1.1=/home/eduk8s/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.servo:servo-core:0.12.21=/home/eduk8s/.m2/repository/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.google.guava:guava:19.0=/home/eduk8s/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.sun.jersey:jersey-core:1.19.1=/home/eduk8s/.m2/repository/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.sun.jersey.contribs:jersey-apache-client4:1.19.1=/home/eduk8s/.m2/repository/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-configuration:commons-configuration:1.10=/home/eduk8s/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-lang:commons-lang:2.6=/home/eduk8s/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.google.inject:guice:4.1.0=/home/eduk8s/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: aopalliance:aopalliance:1.0=/home/eduk8s/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.codehaus.jettison:jettison:1.4.0=/home/eduk8s/.m2/repository/org/codehaus/jettison/jettison/1.4.0/jettison-1.4.0.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.sun.jersey:jersey-servlet:1.19.4=/home/eduk8s/.m2/repository/com/sun/jersey/jersey-servlet/1.19.4/jersey-servlet-1.19.4.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.sun.jersey:jersey-server:1.19.4=/home/eduk8s/.m2/repository/com/sun/jersey/jersey-server/1.19.4/jersey-server-1.19.4.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.sun.jersey:jersey-client:1.19.4=/home/eduk8s/.m2/repository/com/sun/jersey/jersey-client/1.19.4/jersey-client-1.19.4.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.netflix.eureka:eureka-core:1.10.11=/home/eduk8s/.m2/repository/com/netflix/eureka/eureka-core/1.10.11/eureka-core-1.10.11.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.amazonaws:aws-java-sdk-core:1.11.277=/home/eduk8s/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.277/aws-java-sdk-core-1.11.277.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: commons-logging:commons-logging:1.1.3=/home/eduk8s/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: software.amazon.ion:ion-java:1.0.2=/home/eduk8s/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.11.4/jackson-dataformat-cbor-2.11.4.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: joda-time:joda-time:2.8.1=/home/eduk8s/.m2/repository/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.amazonaws:aws-java-sdk-ec2:1.11.277=/home/eduk8s/.m2/repository/com/amazonaws/aws-java-sdk-ec2/1.11.277/aws-java-sdk-ec2-1.11.277.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.amazonaws:jmespath-java:1.11.277=/home/eduk8s/.m2/repository/com/amazonaws/jmespath-java/1.11.277/jmespath-java-1.11.277.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.amazonaws:aws-java-sdk-autoscaling:1.11.277=/home/eduk8s/.m2/repository/com/amazonaws/aws-java-sdk-autoscaling/1.11.277/aws-java-sdk-autoscaling-1.11.277.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.amazonaws:aws-java-sdk-sts:1.11.277=/home/eduk8s/.m2/repository/com/amazonaws/aws-java-sdk-sts/1.11.277/aws-java-sdk-sts-1.11.277.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.amazonaws:aws-java-sdk-route53:1.11.277=/home/eduk8s/.m2/repository/com/amazonaws/aws-java-sdk-route53/1.11.277/aws-java-sdk-route53-1.11.277.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.servlet:servlet-api:2.5=/home/eduk8s/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.woodstox:woodstox-core:5.3.0=/home/eduk8s/.m2/repository/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.inject:javax.inject:1=/home/eduk8s/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.4/jackson-dataformat-xml-2.11.4.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.11.4=/home/eduk8s/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.4/jackson-module-jaxb-annotations-2.11.4.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: jakarta.activation:jakarta.activation-api:1.2.2=/home/eduk8s/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.codehaus.woodstox:stax2-api:4.2.1=/home/eduk8s/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.xml.bind:jaxb-api:2.3.1=/home/eduk8s/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.glassfish.jaxb:jaxb-runtime:2.3.3=/home/eduk8s/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3=/home/eduk8s/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: org.glassfish.jaxb:txw2:2.3.3=/home/eduk8s/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.sun.istack:istack-commons-runtime:3.0.11=/home/eduk8s/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: com.sun.activation:jakarta.activation:1.2.2=/home/eduk8s/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar
+2021-05-13 17:26:12.775  INFO 533 --- [           main] o.s.boot.loader.thin.DependencyResolver  : Resolved: javax.activation:javax.activation-api:1.2.0=/home/eduk8s/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+2021-05-13 17:26:13.563  INFO 533 --- [nio-8888-exec-1] o.a.c.c.C.[Tomcat-4996].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-13 17:26:13.564  INFO 533 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-13 17:26:13.565  INFO 533 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-13 17:26:14.478  INFO 533 --- [nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/application.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-05-13 17:26:14.645  INFO 533 --- [       Thread-5] o.s.boot.SpringApplication               : Starting application using Java 11.0.10 on eduk8s-labs-w01-s060-8b7b74469-pzs2w with PID 533 (/home/eduk8s/.m2/repository/org/springframework/cloud/launcher/spring-cloud-launcher-eureka/3.0.2/spring-cloud-launcher-eureka-3.0.2.jar started by eduk8s in /home/eduk8s/color-app)
+2021-05-13 17:26:14.647  INFO 533 --- [       Thread-5] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2021-05-13 17:26:14.676  INFO 533 --- [       Thread-5] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:8888
+2021-05-13 17:26:14.676  INFO 533 --- [       Thread-5] o.s.b.context.config.ConfigDataLoader    : Located environment: name=application, profiles=[default], label=null, version=f8689a39225f62005498d110a201e036050549cf, state=null
+2021-05-13 17:26:15.581  INFO 533 --- [       Thread-5] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3bae3588-bfb6-30ad-a257-ba235be011c8
+2021-05-13 17:26:15.590  INFO 533 --- [       Thread-5] o.s.c.a.ConfigurationClassEnhancer       : @Bean method FunctionConfiguration.po is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2021-05-13 17:26:15.607  INFO 533 --- [       Thread-5] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-05-13 17:26:15.611  INFO 533 --- [       Thread-5] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-05-13 17:26:15.614  INFO 533 --- [       Thread-5] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-05-13 17:26:15.675  INFO 533 --- [       Thread-5] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$70690be1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:26:15.680  INFO 533 --- [       Thread-5] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:26:15.681  INFO 533 --- [       Thread-5] trationDelegate$BeanPostProcessorChecker : Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:26:15.694  INFO 533 --- [       Thread-5] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:26:15.702  INFO 533 --- [       Thread-5] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:26:15.703  INFO 533 --- [       Thread-5] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-13 17:26:15.967  INFO 533 --- [       Thread-5] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2021-05-13 17:26:15.976  INFO 533 --- [       Thread-5] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-13 17:26:15.977  INFO 533 --- [       Thread-5] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-05-13 17:26:15.994  INFO 533 --- [       Thread-5] org.apache.catalina.loader.WebappLoader  : Unknown class loader [jdk.internal.loader.ClassLoaders$PlatformClassLoader@147c00aa] of class [class jdk.internal.loader.ClassLoaders$PlatformClassLoader]
+2021-05-13 17:26:16.020  INFO 533 --- [       Thread-5] o.a.c.c.C.[Tomcat-2006].[localhost].[/]  : Initializing Spring embedded WebApplicationContext
+2021-05-13 17:26:16.020  INFO 533 --- [       Thread-5] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1343 ms
+2021-05-13 17:26:16.521  INFO 533 --- [       Thread-5] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-05-13 17:26:16.569  INFO 533 --- [       Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-05-13 17:26:16.570  INFO 533 --- [       Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-05-13 17:26:16.734  INFO 533 --- [       Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-05-13 17:26:16.734  INFO 533 --- [       Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-05-13 17:26:17.453  INFO 533 --- [       Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-13 17:26:17.913  INFO 533 --- [       Thread-5] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-05-13 17:26:17.926  INFO 533 --- [       Thread-5] c.f.c.c.BeanFactoryAwareFunctionRegistry : Can't determine default function definition. Please use 'spring.cloud.function.definition' property to explicitly define it.
+2021-05-13 17:26:18.342  INFO 533 --- [       Thread-5] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-05-13 17:26:18.394  INFO 533 --- [       Thread-5] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-05-13 17:26:18.421  INFO 533 --- [       Thread-5] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-05-13 17:26:18.421  INFO 533 --- [       Thread-5] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2021-05-13 17:26:18.428  INFO 533 --- [       Thread-5] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1620926778428 with initial instances count: 0
+2021-05-13 17:26:18.464  INFO 533 --- [       Thread-5] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2021-05-13 17:26:18.466  INFO 533 --- [       Thread-5] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2021-05-13 17:26:18.506  INFO 533 --- [       Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-05-13 17:26:18.506  INFO 533 --- [       Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-05-13 17:26:18.506  INFO 533 --- [       Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-05-13 17:26:18.506  INFO 533 --- [       Thread-5] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-05-13 17:26:18.585  INFO 533 --- [       Thread-5] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2021-05-13 17:26:18.595  INFO 533 --- [       Thread-5] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2021-05-13 17:26:18.596  INFO 533 --- [       Thread-5] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2021-05-13 17:26:18.635  INFO 533 --- [       Thread-5] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path '/actuator'
+2021-05-13 17:26:18.709  INFO 533 --- [       Thread-5] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-05-13 17:26:18.709  INFO 533 --- [       Thread-5] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2021-05-13 17:26:18.709  INFO 533 --- [       Thread-5] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2021-05-13 17:26:18.712  INFO 533 --- [       Thread-5] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2021-05-13 17:26:18.714  INFO 533 --- [      Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2021-05-13 17:26:18.722  INFO 533 --- [      Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2021-05-13 17:26:18.722  INFO 533 --- [      Thread-19] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2021-05-13 17:26:18.722  INFO 533 --- [      Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2021-05-13 17:26:18.722  INFO 533 --- [      Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 0
+2021-05-13 17:26:18.722  INFO 533 --- [      Thread-19] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2021-05-13 17:26:18.725  INFO 533 --- [       Thread-5] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2021-05-13 17:26:18.726  INFO 533 --- [       Thread-5] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2021-05-13 17:26:18.729  INFO 533 --- [      Thread-19] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2021-05-13 17:26:18.761  INFO 533 --- [       Thread-5] o.s.boot.SpringApplication               : Started application in 5.864 seconds (JVM running for 48.432)
+2021-05-13 17:26:18.767  INFO 533 --- [           main] o.s.cloud.launcher.deployer.Deployer     : Status of c2379a711a5028573ef7acfc5aaaccd6: deployed
+
+
+eureka: To see the dashboard open http://localhost:8761
+
+
+
+Type Ctrl-C to quit.
+
+2021-05-13 17:26:32.857  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-13 17:26:32.858  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-13 17:26:32.858  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-13 17:26:32.858  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-13 17:26:32.858  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-13 17:26:32.858  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-05-13 17:26:32.858  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-13 17:26:32.922  INFO 533 --- [nio-8761-exec-2] o.a.c.c.C.[Tomcat-2006].[localhost].[/]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-13 17:26:32.922  INFO 533 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-13 17:26:32.924  INFO 533 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-13 17:26:32.946  WARN 533 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CONFIGSERVER - eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888
+2021-05-13 17:26:32.946  WARN 533 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CONFIGSERVER - eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888
+2021-05-13 17:26:32.956  INFO 533 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888 - Re-registering apps/CONFIGSERVER
+2021-05-13 17:26:32.956  INFO 533 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888: registering service...
+2021-05-13 17:26:32.958  INFO 533 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888: registering service...
+2021-05-13 17:26:32.967  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-13 17:26:33.010  INFO 533 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888 with status UP (replication=false)
+2021-05-13 17:26:33.010  INFO 533 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888 with status UP (replication=false)
+2021-05-13 17:26:33.014  INFO 533 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888 - registration status: 204
+2021-05-13 17:26:33.014  INFO 533 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888 - registration status: 204
+2021-05-13 17:26:33.586  INFO 533 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIGSERVER/eduk8s-labs-w01-s060-8b7b74469-pzs2w:configserver:8888 with status UP (replication=true)
+2021-05-13 17:27:02.969  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-05-13 17:27:02.969  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-05-13 17:27:02.970  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-05-13 17:27:02.970  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-05-13 17:27:02.970  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-05-13 17:27:02.970  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-05-13 17:27:02.970  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-05-13 17:27:02.980  INFO 533 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-05-13 17:27:18.723  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:27:46.269  INFO 533 --- [nio-8888-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreen.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #1)
+2021-05-13 17:27:46.269  INFO 533 --- [nio-8888-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreen.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #0)
+2021-05-13 17:27:46.269  INFO 533 --- [nio-8888-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/application.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:27:50.344  INFO 533 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:8181 with status UP (replication=false)
+2021-05-13 17:27:50.853  INFO 533 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:8181 with status UP (replication=true)
+2021-05-13 17:28:18.724  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:29:11.288  INFO 533 --- [nio-8888-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreen.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #3)
+2021-05-13 17:29:11.289  INFO 533 --- [nio-8888-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreen.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #0)
+2021-05-13 17:29:11.289  INFO 533 --- [nio-8888-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/application.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:29:11.456  INFO 533 --- [nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreen.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #2)
+2021-05-13 17:29:11.456  INFO 533 --- [nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreen.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #0)
+2021-05-13 17:29:11.456  INFO 533 --- [nio-8888-exec-7] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/application.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:29:11.630  INFO 533 --- [nio-8888-exec-6] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreen.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #4)
+2021-05-13 17:29:11.630  INFO 533 --- [nio-8888-exec-6] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreen.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #0)
+2021-05-13 17:29:11.630  INFO 533 --- [nio-8888-exec-6] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/application.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:29:16.889  INFO 533 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:6060 with status UP (replication=false)
+2021-05-13 17:29:16.988  INFO 533 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:8282 with status UP (replication=false)
+2021-05-13 17:29:17.140  INFO 533 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:7070 with status UP (replication=false)
+2021-05-13 17:29:17.401  INFO 533 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:6060 with status UP (replication=true)
+2021-05-13 17:29:17.401  INFO 533 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:8282 with status UP (replication=true)
+2021-05-13 17:29:17.401  INFO 533 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:7070 with status UP (replication=true)
+2021-05-13 17:29:18.724  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:30:18.724  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:30:55.929  INFO 533 --- [nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreenfrontend.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #1)
+2021-05-13 17:30:55.930  INFO 533 --- [nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreenfrontend.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/' (document #0)
+2021-05-13 17:30:55.930  INFO 533 --- [nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/application.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:31:01.494  INFO 533 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENFRONTEND/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreenfrontend:9090 with status UP (replication=false)
+2021-05-13 17:31:01.999  INFO 533 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENFRONTEND/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreenfrontend:9090 with status UP (replication=true)
+2021-05-13 17:31:02.488  INFO 533 --- [nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreengateway.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:31:02.488  INFO 533 --- [nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/application.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:31:02.569  INFO 533 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-13 17:31:02.676  INFO 533 --- [nio-8888-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/blueorgreenauthgateway.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:31:02.676  INFO 533 --- [nio-8888-exec-4] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: Config resource 'file [/tmp/config-repo-489745166232301665/config-files/application.yml]' via location 'file:/tmp/config-repo-489745166232301665/config-files/'
+2021-05-13 17:31:08.147  INFO 533 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENAUTHGATEWAY/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreenauthgateway:8080 with status UP (replication=false)
+2021-05-13 17:31:08.657  INFO 533 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENAUTHGATEWAY/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreenauthgateway:8080 with status UP (replication=true)
+2021-05-13 17:31:09.045  INFO 533 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENGATEWAY/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreengateway:8383 with status UP (replication=false)
+2021-05-13 17:31:09.553  INFO 533 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENGATEWAY/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreengateway:8383 with status UP (replication=true)
+2021-05-13 17:31:18.725  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:32:18.725  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:33:18.725  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:34:18.726  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:35:18.725  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:36:02.569  INFO 533 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-05-13 17:36:18.725  INFO 533 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-05-13 17:36:28.630  INFO 533 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:8282 with status DOWN (replication=false)
+2021-05-13 17:36:28.631  INFO 533 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENGATEWAY/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreengateway:8383 with status DOWN (replication=false)
+2021-05-13 17:36:28.633  INFO 533 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:8181 with status DOWN (replication=false)
+2021-05-13 17:36:28.633  INFO 533 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:7070 with status DOWN (replication=false)
+2021-05-13 17:36:28.642  INFO 533 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREEN/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreen:6060 with status DOWN (replication=false)
+2021-05-13 17:36:28.645  INFO 533 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENAUTHGATEWAY/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreenauthgateway:8080 with status DOWN (replication=false)
+2021-05-13 17:36:28.654  INFO 533 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance BLUEORGREENFRONTEND/eduk8s-labs-w01-s060-8b7b74469-pzs2w:blueorgreenfrontend:9090 with status DOWN (replication=false)
