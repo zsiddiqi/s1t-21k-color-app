@@ -6,7 +6,6 @@ import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.GatewayFilterSpec;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.cloud.gateway.route.builder.UriSpec;
-import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +15,6 @@ import java.util.Map;
 
 @SpringBootApplication
 @RestController
-@LoadBalancerClient(name = "blueorgreen", configuration = LoadBalancerConfiguration.class)
 public class BlueorgreengatewayApplication {
 
 	public static void main(String[] args) {
@@ -29,11 +27,11 @@ public class BlueorgreengatewayApplication {
 			.route(p -> p.path("/blueorgreen")
 				.and().header("X-SC-LB-Hint", "nonpremium")
 				.filters(this::circuitBreaker)
-				.uri("lb://blueorgreen-nonpremium"))
+				.uri("http://blueorgreen-nonpremium"))
 			.route(p -> p.path("/blueorgreen")
 				.filters(this::circuitBreaker)
-				.uri("lb://blueorgreen-premium"))
-				.route(p -> p.path("/").or().path("/color").or().path("/js/**").uri("lb://blueorgreenfrontend"))
+				.uri("http://blueorgreen-premium"))
+				.route(p -> p.path("/").or().path("/color").or().path("/js/**").uri("http://blueorgreenfrontend"))
 				.build();
 	}
 

@@ -93,7 +93,7 @@ public class BlueOrGreenFrontendApplication {
 	@Configuration
 	protected static class RestTemplateConfig {
 
-		@LoadBalanced
+		
 		@Bean
 		public RestTemplate rest(RateLimitErrorHandler rateLimitErrorHandler) {
 			return new RestTemplateBuilder().errorHandler(rateLimitErrorHandler).build();

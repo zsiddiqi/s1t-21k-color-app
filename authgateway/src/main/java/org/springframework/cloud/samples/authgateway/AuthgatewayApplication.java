@@ -25,7 +25,7 @@ public class AuthgatewayApplication {
 	@Bean
 	public RouteLocator routeLocator(RouteLocatorBuilder builder) {
 		return builder.routes()
-				.route(p -> p.path("/**").uri("lb://blueorgreengateway"))
+				.route(p -> p.path("/**").uri("http://blueorgreengateway"))
 				.build();
 	}
 
