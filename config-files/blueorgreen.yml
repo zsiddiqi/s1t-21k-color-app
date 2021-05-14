@@ -29,4 +29,3 @@ spring:
       on-cloud-platform: "kubernetes"
 server:
   port: 8080
-

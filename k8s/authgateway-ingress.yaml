@@ -6,7 +6,7 @@ metadata:
     app: blueorgreenauthgateway
 spec:
   rules:
-  - host: blueorgreenauthgateway-eduk8s-labs-w01-s060.s1tour-prod-c9040c6.tanzu-labs.esp.vmware.com
+  - host: blueorgreenauthgateway-eduk8s-labs-w01-s076.s1tour-prod-c9040c6.tanzu-labs.esp.vmware.com
     http:
       paths:
       - path: "/"

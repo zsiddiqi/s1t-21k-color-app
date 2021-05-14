@@ -18,7 +18,7 @@ spec:
         app: blueorgreengateway
     spec:
       containers:
-      - image: eduk8s-labs-w01-s060-registry.s1tour-prod-c9040c6.tanzu-labs.esp.vmware.com/color-app/blueorgreengateway
+      - image: eduk8s-labs-w01-s076-registry.s1tour-prod-c9040c6.tanzu-labs.esp.vmware.com/color-app/blueorgreengateway
         name: blueorgreengateway
         resources: {}
         volumeMounts:

@@ -18,9 +18,12 @@ spec:
         app: blueorgreenauthgateway
     spec:
       containers:
-      - image: eduk8s-labs-w01-s060-registry.s1tour-prod-c9040c6.tanzu-labs.esp.vmware.com/color-app/authgateway
+      - image: eduk8s-labs-w01-s076-registry.s1tour-prod-c9040c6.tanzu-labs.esp.vmware.com/color-app/authgateway
         name: authgateway
         resources: {}
+        volumeMounts:
+          - name: config-volume
+            mountPath: /workspace/config
         readinessProbe:
           initialDelaySeconds: 30
           httpGet:
@@ -31,4 +34,8 @@ spec:
           httpGet:
             port: 8080
             path: /actuator/health/liveness
+      volumes:
+        - name: config-volume
+          configMap:
+            name: application-config
 status: {}

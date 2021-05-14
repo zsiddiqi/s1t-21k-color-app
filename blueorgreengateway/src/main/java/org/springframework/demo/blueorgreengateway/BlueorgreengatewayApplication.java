@@ -26,13 +26,16 @@ public class BlueorgreengatewayApplication {
 	@Bean
 	public RouteLocator routeLocator(RouteLocatorBuilder builder) {
 		return builder.routes()
-		.route(p -> p.path("/blueorgreen")
+			.route(p -> p.path("/blueorgreen")
 				.and().header("X-SC-LB-Hint", "nonpremium")
 				.filters(this::circuitBreaker)
 				.uri("lb://blueorgreen-nonpremium"))
-		.route(p -> p.path("/blueorgreen")
-        .filters(this::circuitBreaker)
-        .uri("lb://blueorgreen-premium"))
+			.route(p -> p.path("/blueorgreen")
+				.filters(this::circuitBreaker)
+				.uri("lb://blueorgreen-premium"))
+				.route(p -> p.path("/").or().path("/color").or().path("/js/**").uri("lb://blueorgreenfrontend"))
+				.build();
+	}
 
 	private UriSpec circuitBreaker(GatewayFilterSpec gatewayFilterSpec) {
 		return gatewayFilterSpec.circuitBreaker(config -> config.setFallbackUri("forward:/colorfallback"));
